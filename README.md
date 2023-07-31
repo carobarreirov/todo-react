@@ -1,4 +1,4 @@
-# Laughingly Efficient To-Do List App
+# React To-Do List App
 
 A fun, user-friendly, and elegantly designed application to manage your daily tasks with a splash of color!
 
