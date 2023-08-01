@@ -35,6 +35,26 @@ The app is primarily built with two components: `App` and `Task`.
 
 The styling of the app is managed via the `App.css` file. It follows a minimalistic soft UI approach with a lively color scheme centered around pink. 
 
+## useEffect 
+
+This is a use of the `useEffect` hook in React, which allows for performing side effects in function components. 
+
+The `useEffect` hook accepts two arguments: a function and an array of dependencies. The function passed to `useEffect` will run after the render is committed to the screen (similar to `componentDidUpdate` and `componentDidMount` in class components).
+
+In this particular snippet:
+
+```javascript
+useEffect(() => {
+  localStorage.setItem('todos', JSON.stringify(todos));
+}, [todos]);
+```
+
+The effect is setting an item in the local storage. The key of the item is 'todos', and the value is the stringified version of the `todos` state. The `JSON.stringify(todos)` is used because local storage can only store strings, and `todos` is an array.
+
+The `[todos]` after the function is a dependency array. This tells React that the effect function should be called not on every render, but only when the `todos` state changes. In other words, whenever a new todo is added, or an existing todo is deleted or updated, this effect will run and update the 'todos' item in the local storage to match the new state of `todos`.
+
+This way, the todos list is "persisted" in the local storage of the browser, and it will not be lost even if the page is refreshed. When the app is opened again, the `todos` state can be initialized with the data from local storage, and the user will see the same todos list as before.
+
 ## License
 
 This project is licensed under the terms of the MIT license.
