@@ -4,7 +4,7 @@ A fun, user-friendly, and elegantly designed application to manage your daily ta
 
 ## Description 
 
-This application is a simple to-do list app built with ReactJS. It sports a minimal design with a touch of soft UI elements, which makes it as delightful to look at as it is to use. The color palette centers around a vibrant pink (#e26565), bringing an element of fun to your daily task management. With the Laughingly Efficient To-Do List App, task management isn't just practical - it's also visually pleasing.
+This application is a simple to-do list app built with ReactJS. It sports a minimal design with a touch of soft UI elements, which makes it as delightful to look at as it is to use. The color palette centers around a vibrant pink (#e26565), bringing an element of fun to your daily task management. With the To-Do List App, task management isn't just practical - it's also visually pleasing.
 
 ## Features
 
@@ -33,7 +33,7 @@ The app is primarily built with two components: `App` and `Task`.
 
 - `Task` is a child component used to render individual tasks. It receives its props from the `App` component and also triggers the update and delete functionalities by invoking the corresponding functions passed down from the `App` component.
 
-The styling of the app is managed via the `App.css` file. It follows a minimalistic soft UI approach with a lively color scheme centered around pink (#e26565). 
+The styling of the app is managed via the `App.css` file. It follows a minimalistic soft UI approach with a lively color scheme centered around pink. 
 
 ## License
 
